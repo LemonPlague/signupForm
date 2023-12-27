@@ -1,1 +1,7 @@
 /* -------Remove Browser Default Styles------- */
+
+* {
+    margin: 0;
+}
+
+/* -------Full Page------- */
