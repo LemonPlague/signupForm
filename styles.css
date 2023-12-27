@@ -4,27 +4,55 @@
     margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
-	font: inherit;
 	vertical-align: baseline;
+}
+
+/* -------Custom Properties------- */
+:root {
+	--off-white-color: #f3f4f6;
 }
 
 /* -------Full Page------- */
 
 body {
-    display: block;
+    display: flex;
 }
 
 
 
 
 /* -------Page Left------- */
+.pageLeft {
+	background-color: red;
+	width: 35%;
+}
 
 .sideImage img {
-    width: 35%;
+    width: 100%;
 }
 
 
 
 /* -------Page Right------- */
 
+.pageRight {
+	width: 65%;
+	background-color: blue;
+}
+
+/* -------Page Right-TOP------- */
+
+
+.pageTop {
+	padding: 3em 2em 1em 2em;
+	background-color: var(--off-white-color);
+	font-size: .8rem;
+}
+
+.pageTop .firstPara {
+	padding: 1em;
+}
+
+.pageTop .secondPara {
+	padding: 1em;
+}
