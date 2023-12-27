@@ -56,3 +56,22 @@ body {
 .pageTop .secondPara {
 	padding: 1em;
 }
+
+/* -------Page Right-MIDDLE------- */
+
+.form {
+	background-color: white;
+	padding: 1em 2em 1em 2em;
+}
+
+.name, .contact, .password {
+	padding: 1em;
+}
+
+
+/* -------Page Right-bottom------- */
+.pageBottom {
+	background-color: var(--off-white-color);
+	width: 100%;
+	height: 30%;
+}
