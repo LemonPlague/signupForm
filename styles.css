@@ -16,6 +16,7 @@
 
 body {
     display: flex;
+	background-color: yellow;
 }
 
 
@@ -24,11 +25,20 @@ body {
 /* -------Page Left------- */
 .pageLeft {
 	background-color: red;
-	width: 35%;
+	height: min(50rem, 100vh);
 }
 
 .sideImage img {
-    width: 100%;
+    height: min(100vh, 50rem);
+}
+
+.pageLeft .banner {
+	height: 17.2rem;
+	width: 40vw;
+	background-color: white;
+	opacity: 50%;
+	position: absolute;
+	margin-top: -36rem;
 }
 
 
@@ -36,15 +46,22 @@ body {
 /* -------Page Right------- */
 
 .pageRight {
-	width: 65%;
-	background-color: blue;
+	height: 50rem;
+}
+
+.pageRightChild {
+	height: 100%;
+	/* width: max(40vw, 500px); */
 }
 
 /* -------Page Right-TOP------- */
 
 
 .pageTop {
-	padding: 3em 2em 1em 2em;
+	padding-top: 3rem;
+	padding-left: 2rem;
+	padding-right: 2rem;
+	padding-bottom: 1rem;
 	background-color: var(--off-white-color);
 	font-size: .8rem;
 }
