@@ -16,6 +16,8 @@
 
 body {
     display: flex;
+	flex-direction: row;
+	align-items: stretch;
 	background-color: yellow;
 }
 
@@ -25,20 +27,35 @@ body {
 /* -------Page Left------- */
 .pageLeft {
 	background-color: red;
-	height: min(50rem, 100vh);
+	flex-basis: 40%;
+}
+
+.sideImage {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: stretch;
+	background-image: url(https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/adc3e465-619f-4e56-bbbf-8974f9975e3d/original=true/00065-3824675272.jpeg);
 }
 
 .sideImage img {
-    height: min(100vh, 50rem);
+	background-size: contain;
 }
 
 .pageLeft .banner {
-	height: 17.2rem;
-	width: 40vw;
-	background-color: white;
+	height: 8rem;
+	align-self: stretch;
+	background-color: black;
 	opacity: 50%;
 	position: absolute;
-	margin-top: -36rem;
+}
+
+.pageLeft .logo {
+	background-image: url(https://drive.google.com/file/d/1sPoxVmF9ziAbQAketCA5HO1BkttPfi_F/view);
+	position: absolute;
+	margin-top: -38.5rem;
+	height: 4rem;
+	width: 4rem;
 }
 
 
@@ -46,7 +63,7 @@ body {
 /* -------Page Right------- */
 
 .pageRight {
-	height: 50rem;
+	flex-basis: 100%;
 }
 
 .pageRightChild {
