@@ -19,6 +19,7 @@ body {
 	flex-direction: row;
 	align-items: stretch;
 	background-color: yellow;
+	height: 100vh;
 }
 
 
@@ -26,20 +27,22 @@ body {
 
 /* -------Page Left------- */
 .pageLeft {
+	height: 100vh;
 	background-color: red;
-	flex-basis: 40%;
+	flex-basis: 40rem;
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	justify-content: center;
 }
 
 .sideImage {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: stretch;
-	background-image: url(https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/adc3e465-619f-4e56-bbbf-8974f9975e3d/original=true/00065-3824675272.jpeg);
-}
-
-.sideImage img {
-	background-size: contain;
+	height: 100vh;
+	background-color: green;
+	flex-grow: 1;
+	background-image: url("https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/adc3e465-619f-4e56-bbbf-8974f9975e3d/original=true/00065-3824675272.jpeg");
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 .pageLeft .banner {
@@ -51,7 +54,7 @@ body {
 }
 
 .pageLeft .logo {
-	background-image: url(https://drive.google.com/file/d/1sPoxVmF9ziAbQAketCA5HO1BkttPfi_F/view);
+	background-image: url("https://drive.google.com/file/d/1sPoxVmF9ziAbQAketCA5HO1BkttPfi_F/view");
 	position: absolute;
 	margin-top: -38.5rem;
 	height: 4rem;
@@ -63,7 +66,7 @@ body {
 /* -------Page Right------- */
 
 .pageRight {
-	flex-basis: 100%;
+	flex-grow: 1;
 }
 
 .pageRightChild {
