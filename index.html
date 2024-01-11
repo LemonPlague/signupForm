@@ -40,31 +40,37 @@
                     <div class="form-row">
                         <div class="leftside">
                             <label for="first_name">FIRST NAME</label>
-                            <input type="text" name="first_name" id="first_name" placeholder="The">
+                            <input type="text" name="first_name" 
+                            id="first_name" placeholder="The">
                         </div>
                         <div class="rightside">
                             <label for="last_name">LAST NAME</label>
-                            <input type="text" name="last_name" id="last_name" placeholder="Juice">
+                            <input type="text" name="last_name" 
+                            id="last_name" placeholder="Juice">
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="leftside">
                             <label for="email">EMAIL</label>
-                            <input type="email" name="email" id="email" placeholder="thejuice@deeznuts.com">
+                            <input type="email" name="email" 
+                            id="email" placeholder="thejuice@deeznuts.com">
                         </div>
                         <div class="rightside">
                             <label for="phone">PHONE NUMBER</label>
-                            <input type="text" name="phone" id="phone" placeholder="253-555-8000">
+                            <input type="text" name="phone" 
+                            id="phone" pattern="([\d-]{12,13})" placeholder="090-5555-8000" required>
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="leftside">
                             <label for="password">PASSWORD</label>
-                            <input type="password" name="password" id="password" required>
+                            <input type="password" name="password" 
+                            id="password" minlength="8" maxlength="25" required>
                         </div>
                         <div class="rightside">
                             <label for="passconfirm">CONFIRM PASSWORD</label>
-                            <input type="password" name="passconfirm" id="passconfirm" required>
+                            <input type="password" name="passconfirm" 
+                            id="passconfirm" minlength="8" maxlength="25"required>
                         </div>
                     </div>
                     <button type="submit">Create Account</button>

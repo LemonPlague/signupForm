@@ -147,10 +147,13 @@ body {
 	font-size: .7rem;
 }
 
-.form-row input:focus {
+.form input:focus {
 	appearance: none;	
+	border: 0;
 	/* border: 1px solid blue; */
 }
+
+
 
 .form-row label {
 	font-size: .7rem;
