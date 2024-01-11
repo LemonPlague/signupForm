@@ -4,14 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-Up Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Foldit&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
     <div class="pageLeft">
-        <div class="sideImage">side image here
-            <div class="banner"></div>
-            <div class="logo"></div>
+        <div class="sideImage">
+            <div class="banner">
+                <img src="https://imgur.com/a/EOomZf2" alt="Future">
+                </div>
+            <div class="photo-credit">Photo by user on <a href="https://civitai.com">Civitai</a></div>
         </div>
         
     </div>
@@ -48,18 +53,18 @@
                             <input type="email" name="email" id="email" placeholder="thejuice@deeznuts.com">
                         </div>
                         <div class="rightside">
-                            <label for="phone">PHONE</label>
+                            <label for="phone">PHONE NUMBER</label>
                             <input type="text" name="phone" id="phone" placeholder="253-555-8000">
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="leftside">
                             <label for="password">PASSWORD</label>
-                            <input type="password" name="password" id="password">
+                            <input type="password" name="password" id="password" required>
                         </div>
                         <div class="rightside">
                             <label for="passconfirm">CONFIRM PASSWORD</label>
-                            <input type="password" name="passconfirm" id="passconfirm">
+                            <input type="password" name="passconfirm" id="passconfirm" required>
                         </div>
                     </div>
                     <button type="submit">Create Account</button>
@@ -67,6 +72,7 @@
             
             </section>
             <section class="pageBottom"></section>
+            <p>Already have an account? <a href="">Log in</a></p>
 
         </div>
     </div>
