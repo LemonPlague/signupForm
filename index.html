@@ -62,15 +62,15 @@
                         </div>
                     </div>
                     <div class="form-row">
-                        <div class="leftside" id="password">
+                        <div class="leftside" id="passwordcontainer">
                             <label for="password">PASSWORD</label>
-                            <input type="password" name="password" 
+                            <input type="password" name="password" onkeyup="checkpass()"
                             id="password" minlength="8" maxlength="25" required>
                             <p></p>
                         </div>
                         <div class="rightside" id="passwordConfirm">
                             <label for="passconfirm">CONFIRM PASSWORD</label>
-                            <input type="password" name="passconfirm" 
+                            <input type="password" name="passconfirm" onkeyup="checkpass()"
                             id="passconfirm" minlength="8" maxlength="25"required>                            
                         </div>
                     </div>

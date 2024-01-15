@@ -161,6 +161,11 @@ body {
 	font-weight: bold;
 }
 
+#passwordcontainer p {
+	color: red;
+	font-size: 12px;
+}
+
 
 
 /* -------Page Right-bottom------- */

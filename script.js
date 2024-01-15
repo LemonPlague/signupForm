@@ -1,14 +1,19 @@
-const passwordField1 = document.querySelector('#password input');
-const passwordField2 = document.querySelector('#passwordConfirm input');
-const passwordMessage = document.querySelector('#password p');
+const passwordMessage = document.querySelector('#passwordcontainer p');
 const button = document.querySelector('button');
 
 //disable the submit button by default
 button.disabled = true;
-button.style.backgroundColor = gray;
+button.style.backgroundColor = "gray";
 
 //ensure passwords in each field match
-if (passwordField1.textContent != passwordField2.textContent) {
-    passwordMessage.textContent = 'Passwords do not match';
-    passwordMessage.textContent.style.color = red;
+function checkpass() {
+    if (document.querySelector('#password').value == 
+    document.querySelector('#passconfirm').value) {
+        button.disabled = false;
+        button.style.backgroundColor = "rgb(22, 22, 49)";
+    } else {
+        passwordMessage.textContent = 'Passwords do not match.';
+    }
 }
+
+
