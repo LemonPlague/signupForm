@@ -15,5 +15,7 @@ function checkpass() {
         passwordMessage.textContent = 'Passwords do not match.';
         button.disabled = true;
         button.style.backgroundColor = "gray";
+        document.querySelector('#password').style.outline = "1px solid red";
+        document.querySelector('#passconfirm').style.outline = "1px solid red";
     }
 }

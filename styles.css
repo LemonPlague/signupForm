@@ -1,9 +1,9 @@
 /* TODO LIST */
 /* 1. logo in the banner is not appearing; must be fixed
-2. "already have an account?" on the bottom right of the page is not moving 
-to the position directly underneath the "create account" button. must be fixed.
+2. form input :invalid property needs to be manipulated via javascript
+to color password boxes red when they don't match
 3. must add hover/already clicked properties for links such as bottom left side.
-4. border on inputs is set to blue, but shows as black when at 1px
+
  */
 
 
@@ -30,11 +30,8 @@ body {
     display: flex;
 	flex-direction: row;
 	align-items: stretch;
-	background-color: yellow;
 	height: 100vh;
 }
-
-
 
 
 /* -------Page Left------- */
@@ -126,8 +123,8 @@ body {
 	background-color: white;
 	padding: 1rem 2rem 1rem 2rem;
 	box-shadow: 0 3px 3px rgb(160, 160, 160);
-	position:relative;
-    z-index:999;
+	position: relative;
+    z-index: 999;
 }
 
 .form-row {
@@ -151,9 +148,8 @@ body {
 
 .form input:focus {
 	appearance: none;
-	outline: 2px solid blue;
+	outline: 1px solid rgb(0, 190, 253);
 }
-
 
 
 .form-row label {
@@ -177,6 +173,7 @@ body {
 	border-radius: 5px;
 	background-color: rgb(22, 22, 49);
 	color: white;
+	font-weight: bold;
 	margin-top: 2.5rem;
 	position: absolute;
 	box-shadow: 3px 3px 3px rgb(94, 93, 93);
@@ -204,4 +201,10 @@ body {
 	padding-top: 4rem;
 	padding-left: 3rem;
 	font-size: .8rem;
+}
+
+.pageBottom p a {
+	color: rgb(94, 93, 93);
+	text-decoration: none;
+	font-weight: bolder;
 }
