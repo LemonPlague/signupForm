@@ -30,7 +30,7 @@ body {
 }
 
 
-/* -------Page Left------- */
+/* -------PAGE LEFT------- */
 .pageLeft {
 	height: 100vh;
 	background-color: red;
@@ -82,7 +82,7 @@ body {
 
 
 
-/* -------Page Right------- */
+/* -------PAGE RIGHT------- */
 
 .pageRight {
 	flex-grow: 1;
@@ -200,7 +200,7 @@ body {
 }
 
 .pageBottom p a {
-	color: rgb(94, 93, 93);
+	color: rgb(22, 22, 49);
 	text-decoration: none;
 	font-weight: bolder;
 }
