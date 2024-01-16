@@ -11,6 +11,8 @@ function checkpass() {
     document.querySelector('#passconfirm').value) {
         button.disabled = false;
         button.style.backgroundColor = "";
+        document.querySelector('#password').style.outline = "";
+        document.querySelector('#passconfirm').style.outline = "";
     } else {
         passwordMessage.textContent = 'Passwords do not match.';
         button.disabled = true;
