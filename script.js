@@ -13,6 +13,7 @@ function checkpass() {
         button.style.backgroundColor = "";
         document.querySelector('#password').style.outline = "";
         document.querySelector('#passconfirm').style.outline = "";
+        passwordMessage.textContent = '';
     } else {
         passwordMessage.textContent = 'Passwords do not match.';
         button.disabled = true;
