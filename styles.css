@@ -65,8 +65,9 @@ body {
 }
 
 .banner img {
-	height: 20px;
-	width: 20px;
+	height: 5rem;
+	width: 5rem;
+	padding-top: 1rem;
 }
 
 .photo-credit {
