@@ -15,5 +15,3 @@ function checkpass() {
         passwordMessage.textContent = 'Passwords do not match.';
     }
 }
-
-

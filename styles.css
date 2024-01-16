@@ -4,7 +4,7 @@
 to the position directly underneath the "create account" button. must be fixed.
 3. must add hover/already clicked properties for links such as bottom left side.
 4. border on inputs is set to blue, but shows as black when at 1px
-4. stylize the form submit button
+4. box shadow
 5. stylize the form itself */
 
 
@@ -126,6 +126,7 @@ body {
 .form {
 	background-color: white;
 	padding: 1rem 2rem 1rem 2rem;
+	box-shadow: 0 -4px 10px black;
 }
 
 .form-row {
@@ -148,9 +149,8 @@ body {
 }
 
 .form input:focus {
-	appearance: none;	
-	border: 0;
-	/* border: 1px solid blue; */
+	appearance: none;
+	outline: 2px solid blue;
 }
 
 
@@ -178,6 +178,7 @@ body {
 	color: white;
 	margin-top: 2.5rem;
 	position: absolute;
+	box-shadow: 5px 5px blue;
 }
 
 .form button:hover,
@@ -193,8 +194,12 @@ body {
 	height: 26.5%;
 }
 
-.pageBottom p {
-	position: absolute;
-	margin-top: -50rem;
+.pageBottom .testbox {
+	box-shadow: 5px 5px blue;
+	border: none;
+}
+
+.testbox:focus {
+	border: none;
 }
 
